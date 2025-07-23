@@ -1,0 +1,240 @@
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+list-style-type: none;
+    list-style: none;
+}
+
+.space{
+    margin-top: 50px;
+}
+.static{
+    width:400px;
+    padding: 40px;
+    border:3px solid rgb(51, 45, 45);
+    background-color: red;
+    position: static;
+    bottom: 40px;
+    right: 50%;
+}
+.relative{
+    width:400px;
+    padding: 40px;
+    border:3px solid red;
+    background-color: blue;
+    position: relative;
+    top: 120px;
+    right: 4rem;
+
+
+}
+.absolute{
+    width:400px;
+    padding: 40px;
+    border:3px solid red;
+    background-color: green;
+}
+.sticky{
+    width:400px;
+    padding: 40px;
+    border:3px solid rgb(222, 245, 16);
+    background-color: rgb(105, 35, 216), 8, 184);
+}
+.fixed{
+    width:400px;
+    padding: 40px;
+    border:3px solid rgb(222, 245, 16);
+    background-color: brown;
+    position: fixed;
+    top:0;
+    right: 0;
+}
+
+.parent{
+    margin: 50px 0;
+    border: 2px solid black;
+    padding: 30px; 
+    position: relative;
+}
+.parent h1{
+    font-size: 16px;
+}
+
+.author-details{
+    margin-top: 50px;
+   max-width: 200px;
+    padding: 30px;
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;
+    background-color: blanchedalmond;
+}
+.top{
+    margin: 120px 0;
+}
+.box{
+    width:200px;
+    height: 100px;
+    margin: 10px 10;
+    border: 2px solid black;
+    padding: 10px 2px;
+}
+.box1{
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;   
+    z-index: 999; 
+
+}
+.box2{
+    background-color: green;
+     position: absolute;
+    top: 40px;
+    left: 40px; 
+    z-index: 2;   
+}
+.box3{
+    background-color: blue;
+     position: absolute;
+    top: 60px;
+    left: 60px;  
+    z-index: 0;  
+}
+.container{
+    border: 3px;
+    margin: 5px 0 0;
+    padding: 20px;
+    position: relative;
+}
+.float{
+    border: 3px;
+    padding: 30px;
+
+}
+.child{
+    border: 3px;
+    padding: 30px;
+    float: right;
+}
+.child2{
+    border: 3px;
+    padding: 30px;
+    float: left;
+}
+
+
+.one{
+    background: red;
+    color: white;
+   
+    display: flex;
+    align-items:start;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.one h1{
+    font-size: 18px;
+}
+.two{
+     background: green;
+    color: white;
+     
+}
+.three{
+     background:blue;
+    color: white;
+   
+   
+}
+.four{ background: yellow;
+    color: white;
+   
+    
+}
+.five{ background: orange;
+    color: white;
+    
+    
+   
+ 
+}
+.six{ background: brown;
+    color: white;
+ 
+    
+}
+.parents{
+    display: flex;
+    margin: 20px 30px;
+    padding: 10px;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px;
+    /* flex-wrap:wrap; */
+   
+}
+
+nav{
+    padding: 10px;
+    margin: 30px 0;
+    box-shadow: 4px 4px 2px rgb(211, 218, 155);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+ul{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+ul li{
+    font-weight: 600;
+}
+
+
+.containers{
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+   
+}
+.boxs{
+background-color: brown;
+}
+.boxe{
+background-color: rgb(187, 224, 54);
+flex: 1 0 300px;
+}
+.boxr{
+    background-color: rgb(88, 61, 209);
+}
+.boxt{
+    background-color: rgb(194, 50, 122);
+}
+.boxt{
+    background-color: rgb(194, 50, 122);
+}
+.boxl{
+    background-color: rgba(48, 197, 152, 0.315);
+}
+.boxa{
+    background-color: red;
+    flex-shrink: 1;
+     align-self: center;
+}
+
+.inline-block{
+    display: inline-flex;
+    background: rgb(85, 183, 207);
+    padding: 2px;
+    margin: 40px 0;
+}
