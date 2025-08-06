@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  list-style: none;
+}
+
+.flex-container {
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  box-shadow: 3px 3px 3px 0px rgb(134, 12, 190);
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  
+}
+
+/* .card:hover{
+ transform: scale(1.2);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(
+      purple 0%,
+      pink 25%,
+      indigo 50%,
+      orange 75%,
+        black 100%
+    );
+} */
+
+.card:has(img:hover) {
+  transform: scale(1.2);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+@media screen and (max-width: 400px) {
+  .flex-container {
+    padding: 20px 5px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 660px) {
+  .flex-container {
+    padding: 20px 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(
+      red 0%,
+      brown 25%,
+      green 50%,
+      blue 75%,
+      yellow 100%
+    );
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 900px) {
+  .flex-container {
+    padding: 20px 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
